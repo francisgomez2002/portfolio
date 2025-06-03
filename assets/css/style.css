@@ -7,13 +7,21 @@ a {
   list-style: none;
 }
 
+ul {
+  padding-left: 1rem;
+}
+
+li {
+  padding: 0.2rem;
+}
+
 /* * {
   border: 1px solid #e1306c;
 } */
 
 body {
   font-family: "Share Tech", sans-serif;
-  background: #ebe8e2;
+  background: #fff;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -153,7 +161,7 @@ header .social a i.github:hover {
 
 #hero .container-xl {
   padding: 50px 0;
-  background: #00000033;
+  background: #ffbf007a;
   border: 2px solid #00000033;
   backdrop-filter: blur(20px);
   border-radius: 16px;
@@ -201,7 +209,7 @@ header .social a i.github:hover {
   left: 60%;
   width: 30%;
   height: 81%;
-  border: 30px solid #003c95;
+  border: 30px solid #007ba7;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -639,5 +647,118 @@ header .social a i.github:hover {
 }
 
 #services {
-  padding: 80px 0;
+  padding: 35px 0;
+}
+
+#services .heading {
+  padding: 40px 0;
+  text-align: center;
+}
+
+#services .heading h3 {
+  justify-self: center;
+  font-size: 3rem;
+  font-weight: 900;
+  border: 5px solid #007ba7;
+  border-radius: 10px 26px;
+  width: 35%;
+}
+
+#services .heading h3::before,
+#services .heading h3::after {
+  content: "";
+  position: absolute;
+  bottom: -111.5%;
+  width: 15px;
+  height: 15px;
+  background: #007ba7;
+  border-radius: 50%;
+}
+
+#services .heading h3::before {
+  left: 30%;
+}
+
+#services .heading h3::after {
+  right: 30%;
+}
+
+#services .services-pic {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#services .services-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#services .card {
+  width: 90%;
+  padding: 20px;
+  box-shadow: #000 20px 14px 0px;
+  border: 2px solid #000;
+  border-radius: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+#services .card:hover {
+  border: none;
+  box-shadow: #000 0px 0px 0px;
+  background: #e9ce00;
+}
+
+#services .card .display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#services .card .display img {
+  width: 70%;
+  height: 230px;
+  object-fit: contain;
+}
+
+#services .card .desc {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+  padding: 20px;
+  border: 2px solid #000;
+  border-radius: 16px;
+  transition: all 0.1s ease-in-out;
+  opacity: 0;
+}
+
+#services .card:hover .desc {
+  opacity: 1;
+}
+
+#services .card .desc .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+#services .card .desc .logo .logo-img {
+  display: flex;
+  background: #e9ce00;
+  width: 55px;
+  height: 55px;
+  border: 1px dotted #000;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+#services .card .desc .logo img {
+  width: 35px;
+  height: 35px;
 }
