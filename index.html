@@ -51,9 +51,10 @@
             <a class="nav-link" href="#about">About</a>
             <a class="nav-link" href="#services">Services</a>
             <a class="nav-link" href="#projects">Projects</a>
-            <button type="button" data-bs-toggle="modal" data-bs-target="#contactModal">
+            <a class="nav-link" href="#contact">Contact</a>
+            <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#contactModal">
               Let's Talk
-            </button>
+            </button> -->
           </div>
           <div class="social">
             <a href="https://github.com/FrancisGomes" target="_blank"><i class="fa-brands fa-facebook facebook"></i></a>
@@ -305,11 +306,11 @@
           </div>
           <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
             <div class="card">
-              <div class="display"><img src="./assets/images/services/custom-web-icon.png" alt=""></div>
+              <div class="display"><img src="./assets/images/services/web-maintainence-icon.png" alt=""></div>
               <div class="desc">
                 <div class="logo">
                   <div class="logo-img">
-                    <img src="./assets/images/services/custom-web-icon.png" alt="">
+                    <img src="./assets/images/services/web-maintainence-icon.png" alt="">
                   </div>
                   <h5>Website Maintenance</h5>
                 </div>
@@ -324,12 +325,70 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
-    <section id="projects"></section>
-    <section id="contact"></section>
+    <section id="projects">
+      <div class="container-xl">
+        <div class="heading">
+          <h3>My Projects</h3>
+        </div>
+        <div class="projects-lists"></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container-xl">
+        <div class="contact-details">
+          <div class="form">
+            <h5>Let's talk</h5>
+            <p>To help you grow !</p>
+            <form action="https://api.web3forms.com/submit" method="POST" class="row row-gap-24">
+              <input type="hidden" name="access_key" value="8ab86c90-44f8-4b2a-82f9-a736d43469fb">
+              <div class="col-12">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" name="name" class="form-control" placeholder="Your Name" id="name" required>
+              </div>
+              <div class="col-12">
+                <label for="email" class="form-label">Company</label>
+                <input type="text" name="company" class="form-control" placeholder="Your Company" id="company" required>
+              </div>
+              <div class="col-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" class="form-control" placeholder="Your Email" id="email" required>
+              </div>
+              <div class="col-12">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" name="message" id="message" placeholder="Your Message" rows="3" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="desc">
+            <div class="details">
+              <h5>Get in Touch</h5>
+              <div class="email"><i class="fa-solid fa-at"></i>
+                <p>gomes.franciscus@gmail.com</p>
+              </div>
+              <div class="address"><img src="./assets/images/contact/pin.png" alt="">
+                <p>455/1, Kabi Mukunda Das Road, Kolkata - 700065, Dum Dum Cantonment, West Bengal, India</p>
+              </div>
+              <div class="phone"><i class="fa-solid fa-phone"></i>
+                <p>+91 82729 53598</p>
+              </div>
+              <div class="socials">
+                <a href="#" class="facebook social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="instagram social-icon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="linkedin social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="github social-icon"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <img src="./assets/images/contact/msg-pic-1.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
   <footer id="footer"></footer>
 
