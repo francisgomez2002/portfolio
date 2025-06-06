@@ -1,8 +1,10 @@
-*,
-a {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+a {
   text-decoration: none;
   list-style: none;
 }
@@ -226,103 +228,31 @@ header .social a i.github:hover {
   left: 5%;
 }
 
+#hero .download .explore,
 #hero .download .resume {
-  margin: 0 50px;
-  background-color: transparent;
-  border: 1px solid #266DB6;
-  box-sizing: border-box;
-  color: #00132C;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  padding: 16px 23px;
-  position: relative;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-#hero .download .resume:hover,
-#hero .download .resume:active {
-  outline: 0;
-}
-
-#hero .download .resume:hover {
-  background-color: transparent;
-  cursor: pointer;
-}
-
-#hero .download .resume:before {
-  background-color: #D5EDF6;
-  content: "";
-  height: calc(100% + 3px);
-  position: absolute;
-  right: -7px;
-  top: -9px;
-  transition: background-color 300ms ease-in;
-  width: 100%;
-  z-index: -1;
-}
-
-#hero .download .resume:hover:before {
-  background-color: #6DCFF6;
-}
-
-#hero .download .explore {
-  margin: 0 50px;
-  align-items: center;
-  background-color: #b2daef;
-  border: 2px solid #111;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: #111;
-  cursor: pointer;
   display: flex;
-  font-size: 16px;
-  height: 48px;
-  justify-content: center;
-  line-height: 24px;
-  max-width: 100%;
-  padding: 0 25px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
+  background: #94e1fe;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 16px;
+  color: #000;
+  margin-left: 5rem;
+  font-size: 1.1rem;
+  box-shadow: #000 11px 9px 0px;
+  transition: all 0.4s ease-in-out;
 }
 
-#hero .download .explore:after {
-  background-color: #111;
-  border-radius: 8px;
-  content: "";
-  display: block;
-  height: 48px;
-  left: 0;
-  width: 100%;
-  position: absolute;
-  top: -2px;
-  transform: translate(8px, 8px);
-  transition: transform .2s ease-out;
-  z-index: -1;
+#hero .download .resume {
+  background: #31ffee;
 }
 
-#hero .download .explore:hover:after {
-  transform: translate(0, 0);
-}
-
-#hero .download .explore:active {
-  background-color: #ffdeda;
-  outline: 0;
-}
-
-#hero .download .explore:hover {
-  outline: 0;
+#hero .download .explore:hover,
+#hero .download .resume:hover {
+  box-shadow: #000 0px 0px 0px;
 }
 
 #hero .download .explore i {
-  margin-top: 5px;
+  margin-bottom: 10px;
   margin-left: 5px;
 }
 
@@ -792,7 +722,7 @@ header .social a i.github:hover {
 
 #contact {
   padding: 55px 0 70px;
-  background-image: url(/assets/images/contact/contact-bg.jpg);
+  background-image: url(../images/contact/contact-bg.jpg);
 }
 
 #contact .contact-details {
