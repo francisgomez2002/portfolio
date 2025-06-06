@@ -792,7 +792,7 @@ header .social a i.github:hover {
 
 #contact {
   padding: 55px 0 70px;
-  background-image: url(/assets/images/contact/contact-bg.jpg);
+  background-image: url(../assets/images/contact/contact-bg.jpg);
 }
 
 #contact .contact-details {
