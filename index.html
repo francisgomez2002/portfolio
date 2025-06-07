@@ -15,6 +15,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
 
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined" rel="stylesheet">
+
+
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
@@ -34,10 +39,11 @@
 
   <!-- Custom Styles Sheet -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/dark-mode.css">
   <link rel="stylesheet" href="./assets/css/mediaQuery.css">
 </head>
 
-<body>
+<body class="dark-mode light-mode">
   <header id="navigation_bar">
     <div class="container-">
       <nav class="navbar navbar-expand-lg ">
@@ -72,6 +78,9 @@
   <main>
     <section id="hero">
       <div class="container-xl">
+        <button id="darkModeToggle" class="button toggle">
+          <i class="fas fa-sun" id="modeIcon"></i>
+        </button>
         <div class="hero-details">
           <div class="inner-box">
             <div class="sub-head">
@@ -391,7 +400,7 @@
       </div>
     </section>
 
-    
+
   </main>
   <div class="scroll-to-top"><i class="fa-regular fa-hand-point-up"></i></div>
   <footer id="footer"></footer>

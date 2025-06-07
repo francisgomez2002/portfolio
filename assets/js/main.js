@@ -245,3 +245,23 @@ phrases();
 setInterval(() => {
   phrases();
 }, 8000);
+
+//Dark Mode toggle
+const toggleBtn = document.getElementById('darkModeToggle');
+const modeIcon = document.getElementById('modeIcon');
+
+toggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+
+  const isDark = document.body.classList.contains('dark-mode');
+  modeIcon.className = isDark ? 'fas fa-moon' : 'fas fa-sun';
+});
+
+// Always start in light mode (no localStorage)
+window.onload = () => {
+  document.body.classList.remove('dark-mode');
+  modeIcon.className = 'fas fa-sun';
+};
+
+
+

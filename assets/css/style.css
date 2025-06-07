@@ -25,9 +25,9 @@ textarea {
   border: 1px solid #e1306c;
 } */
 
-body {
+body.light-mode {
   font-family: "Share Tech", sans-serif;
-  background: #fff;
+  background: #ffe085;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -173,6 +173,39 @@ header .social a i.github:hover {
   border-radius: 16px;
 }
 
+#hero button.toggle {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 5%;
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(90deg, rgba(255, 150, 102, 1) 16%, rgba(255, 173, 41, 1) 83%);
+  box-shadow: inset -2px -2px 9px #00000047, inset -2px 16px 12px #3939397d;
+}
+
+#hero button.toggle::before {
+  content: "";
+  position: absolute;
+  justify-self: anchor-center;
+  align-self: anchor-center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#hero button.toggle i {
+  position: absolute;
+  justify-self: anchor-center;
+  align-self: center;
+  font-size: 45px;
+  color: #ffc107;
+}
+
 #hero .hero-details {
   display: flex;
   justify-content: space-around;
@@ -210,10 +243,10 @@ header .social a i.github:hover {
   content: " ";
   position: absolute;
   left: 19%;
-  top: 56% ;
+  top: 56%;
   width: 15%;
   height: 9%;
-  background-color: #ffe085;
+  background-color: #ffd045;
   border-left: 2px solid #007ba7;
   animation: animate 4s steps(12) infinite;
 }
@@ -244,6 +277,7 @@ header .social a i.github:hover {
   width: 30%;
   height: 81%;
   border: 30px solid #007ba7;
+  border-radius: 16px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
