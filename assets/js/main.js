@@ -211,3 +211,37 @@ progressBars.forEach((bar) => {
   }, speed);
 });
 
+// Scroll to top button
+const scrollToTopBtn = document.querySelector('.scroll-to-top');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 100) {
+    scrollToTopBtn.classList.add('show');
+  } else {
+    scrollToTopBtn.classList.remove('show');
+  }
+});
+
+scrollToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+// Text typing effect
+const text = document.querySelector('.word');
+
+const phrases = () => {
+  setTimeout(() => {
+    text.textContent = ' DEVELOPER';
+  }, 0);
+  setTimeout(() => {
+    text.textContent = ' DESIGNER';
+  }, 4000);
+}
+
+phrases();
+setInterval(() => {
+  phrases();
+}, 8000);
