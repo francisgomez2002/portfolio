@@ -173,6 +173,33 @@ header .social a i.github:hover {
   border-radius: 16px;
 }
 
+#hero .bulb-off,
+#hero .bulb-on {
+  position: absolute;
+  top: 0%;
+  left: -7%;
+  font-size: 70px;
+  font-weight: 900;
+  color: #ff5000;
+  transform: rotate(180deg);
+}
+
+#hero .bulb-on {
+  display: none;
+}
+
+#hero .bulb-off::before,
+#hero .bulb-on::before {
+  content: "";
+  position: absolute;
+  justify-self: anchor-center;
+  top: 94%;
+  width: 3px;
+  height: 100px;
+  border: 4px dashed #ff5000;
+  z-index: -1;
+}
+
 #hero button.toggle {
   position: absolute;
   display: flex;
@@ -245,7 +272,7 @@ header .social a i.github:hover {
   left: 19%;
   top: 56%;
   width: 15%;
-  height: 9%;
+  height: 8%;
   background-color: #ffd045;
   border-left: 2px solid #007ba7;
   animation: animate 4s steps(12) infinite;
@@ -299,7 +326,7 @@ header .social a i.github:hover {
   margin-left: 5rem;
   font-size: 1.1rem;
   box-shadow: #000 11px 9px 0px;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 #hero .download .resume {
@@ -401,52 +428,129 @@ header .social a i.github:hover {
   grid-column-start: 1;
   grid-row-start: 4;
   margin-top: 15px;
-  filter: drop-shadow(4px 6px 6px black);
-}
-
-#about .about-details:hover {
-  filter: drop-shadow(0 0 0 #0dcaf0);
 }
 
 #about .about-details .heading {
   display: flex;
-  position: absolute;
-  background: #0dcaf0;
-  left: 1rem;
-  bottom: 88%;
-  width: 56%;
-  border-radius: 5px;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+  border-radius: 1rem;
+  border: 1px solid #000;
+  background: #b6d8f7;
+  box-shadow: #495057 5px 5px 0;
 }
 
 #about .about-details .heading h5 {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: 600;
   margin: 5px;
   color: #00132C;
 }
 
-#about .about-details .heading i {
+#about .about-details .heading .medal {
   margin-top: 6px;
-  font-size: 28px;
-  margin-left: 150px;
-  color: #6c6c6c;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #222e3a;
 }
 
 #about .about-details:hover .heading i {
   color: #004ac1;
 }
 
-#about .about-details .desc {
-  position: relative;
-  padding: 30px;
-  background: #0dcaf0;
-  max-width: 475px;
-  max-height: 250px;
-  clip-path: path("M 20,45 L 300,45 A 10,10 0 0 0 310,35 L 310,20 A 10,10 0 0 1 320,10 L 465,10 A 10,10 0 0 1 475,20 L 475,240 A 10,10 0 0 1 465,250 L 20,250 A 10,10 0 0 1 10,240 L 10,60 A 10,12 0 0 1 20,45 Z");
+#about .about-details .out-desc {
+  filter: drop-shadow(10px 10px 0 #000);
+  transition: all 0.3s ease-in-out;
 }
 
-#about .about-details .desc p {
-  margin-top: 40px;
+#about .about-details .out-desc:hover {
+  filter: drop-shadow(0px 0px 0px #000);
+}
+
+#about .about-details .desc {
+  position: relative;
+  padding: 15px;
+  background: #bcd8ec;
+  max-width: 475px;
+  min-height: 180px;
+  margin-top: 15px;
+  clip-path: path("M 0,0 L 455,0 A -20,20 0 0 1 475,20 L 475,105 A -20,20 0 0 1 455,125 L 240,125 A -20,20 0 0 0 230, 140 L 230,165 A -20,20 0 0 1 210,180 L 210,180 L 20,180 A -20,20 0 0 1 0,160 L 0,20 A -20,20 0 0 1 20,0 Z");
+}
+
+
+#about .about-details .desc .slider .skill-slides {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5.5px 1rem;
+  min-width: 325px;
+}
+
+#about .about-details .desc .slider .skill-slides i {
+  position: relative;
+  right: 8%;
+  font-size: 9rem;
+  margin: 0 2rem;
+  transition: all 0.3s ease-in-out;
+  filter: grayscale(100%);
+}
+
+#about .about-details .desc .slider .skill-slides p.title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin: 0 -15px;
+}
+
+#about .about-details .desc .slider .skill-slides img {
+  position: relative;
+  right: 10%;
+  width: 130px;
+  height: 135px;
+  transition: all 0.3s ease-in-out;
+  filter: grayscale(100%);
+}
+
+#about .about-details .desc .slider .skill-slides.c img {
+  right: 5%;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  display: none;
+}
+
+#about .about-details .out-desc:hover .slider .skill-slides img {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+#about .about-details .out-desc:hover .slider .skill-slides i {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+#about .about-details .out-desc:hover .slider .skill-slides i.fa-html5 {
+  color: #e34c26;
+}
+
+#about .about-details .out-desc:hover .slider .skill-slides i.fa-css3-alt {
+  color: #1572B6;
+}
+
+#about .about-details .out-desc:hover .slider .skill-slides i.fa-square-js {
+  color: #e9ce00;
+}
+
+#about .about-details .out-desc:hover .slider .skill-slides i.fa-bootstrap {
+  color: #563d7c;
+}
+
+#about .about-details .out-desc:hover .slider .skill-slides i.fa-react {
+  color: #00c8ff;
+}
+
+#about .about-details .out-desc:hover .slider .skill-slides i.fa-github {
+  color: #565555;
 }
 
 #about .expertize {
@@ -459,188 +563,88 @@ header .social a i.github:hover {
 #about .expertize .heading {
   display: flex;
   justify-content: center;
-  padding: 15px;
-  background: #007BA7;
-  border: 2px solid #007BA7;
+  align-items: center;
+  background: #f9c0af;
+  border: 2px solid #000;
   border-radius: 26px;
+  box-shadow: #000 10px 10px 0;
 }
 
 #about .expertize .heading h5 {
-  font-size: 1.9rem;
+  font-size: 3rem;
   font-weight: 900;
+  margin: 1rem;
 }
 
-#about .expertize .heading i {
-  position: relative;
-  left: 3%;
-  bottom: 5px;
-  padding: 10px;
-  font-size: 28px;
-  color: #003385;
-  animation: rotate 2s linear infinite;
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
+#about .expertize .heading .story {}
 
 #about .expertize .desc {
-  display: grid;
+  filter: drop-shadow(20px 15px 0 #000);
+}
+
+#about .expertize .desc-inside {
   position: relative;
-  grid-template-columns: repeat(3, 250px);
-  grid-template-rows: repeat(3, 160px);
-  gap: 20px;
   padding: 20px;
-  background: #007BA7;
+  background: #ffddd8;
   margin-top: 15px;
   min-height: 605px;
   width: 750px;
-  clip-path: path("M 40,80 L 200,80 A 10,10 0 0 0 210,70 L 210,20 A 10,10 0 0 1 220,10 L 740,10 A 10,10 0 0 1 750,20 L 750,515 A 10,10 0 0 1 740,530 L 500,530 A 10,10 0 0 0 490,540 L 490,595 A 10,10 0 0 1 480,605 L 40,605 A 10,10 0 0 1 30,595 L 30,90 A 10,10 0 0 1 40,80 Z");
-}
-
-#about .expertize .desc p {
-  position: absolute;
-  left: 45%;
-  margin-top: 15px;
-}
-
-#about .expertize .desc .slider {
-  position: absolute;
-  top: 7rem;
-  width: 100%;
-  height: 90px;
-  margin: 0 auto;
-  background: #f0f0f0;
-}
-
-#about .expertize .desc .slider .skill-slides {
-  padding: 5.5px 0;
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-#about .expertize .desc .slider .skill-slides i {
-  font-size: 4.5rem;
-  margin: 0 1rem;
-  transition: all 0.3s ease-in-out;
-  filter: grayscale(100%);
-}
-
-#about .expertize .desc .slider .skill-slides img {
-  width: 100px;
-  height: 75px;
-  transition: all 0.3s ease-in-out;
-  filter: grayscale(100%);
-}
-
-.slick-next:before,
-.slick-prev:before {
-  display: none;
-}
-
-#about .expertize .desc .slider .skill-slides img:hover {
-  transform: scale(1.1);
-  filter: grayscale(0%);
-}
-
-#about .expertize .desc .slider .skill-slides i:hover {
-  transform: scale(1.1);
-  filter: grayscale(0%);
-}
-
-#about .expertize .desc .slider .skill-slides i.fa-html5:hover {
-  color: #e34c26;
-}
-
-#about .expertize .desc .slider .skill-slides i.fa-css3-alt:hover {
-  color: #1572B6;
-}
-
-#about .expertize .desc .slider .skill-slides i.fa-square-js:hover {
-  color: #e9ce00;
-}
-
-#about .expertize .desc .slider .skill-slides i.fa-bootstrap:hover {
-  color: #563d7c;
-}
-
-#about .expertize .desc .slider .skill-slides i.fa-react:hover {
-  color: #00c8ff;
-}
-
-#about .expertize .desc .slider .skill-slides i.fa-github:hover {
-  color: #565555;
-}
-
-#about .expertize .desc .bars {
-  display: flex;
-  position: absolute;
-  left: 5%;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  grid-row-start: 2;
-  margin-top: 20px;
-}
-
-#about .expertize .desc .bars .details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px 20px 0;
-}
-
-#about .expertize .desc .bars .details .circular-bar {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background: conic-gradient(#aea0fc 5deg, #4797ff 10deg, #6DCFF6 15deg, #b2faa3 20deg, #fbff82 25deg, #ffbc6a 30deg, #ff677d 35deg, #f0f0f0 0deg);
-}
-
-#about .expertize .desc .bars .details .circular-bar::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 85px;
-  height: 85px;
-  background: #61d2e1;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#about .expertize .desc .bars .details .circular-bar .progress-percent {
-  position: relative;
-}
-
-#about .expertize .desc .bars .details .circular-bar .progress-text {
-  position: relative;
+  clip-path: path("M 0,0 L 720,0 A 25,20 0 0 1 750,20 L 750,350 L 753,355 A 2,-2 0 0 0 420,605 L 20,605 A 20,20 0 0 1 0,585 L 0,0 L 0,20 A 20,20, 0 0 1 20,0 Z");
 }
 
 #about .more {
-  position: relative;
-  padding: 20px;
-  top: 3.3rem;
-  right: 10%;
-  height: 67px;
-  width: 100%;
-  border-radius: 10px;
   grid-column-start: 5;
   grid-row-start: 5;
-  background: #61d2e1;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  right: 33%;
+  bottom: 120%;
+  border: 0;
+  border-radius: 50%;
+  background: #ffddd8;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+#about .more .more-text {
+  position: absolute;
+  inset: -10px;
+  animation: text-rotation 8s linear infinite;
+
+  >span {
+    position: absolute;
+    transform: rotate(calc(23deg * var(--index)));
+    inset: 10px;
+  }
+}
+
+@keyframes text-rotation {
+  to {
+    rotate: 360deg;
+  }
+}
+
+#about .more .more-text .text {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+#about .more .more-circle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  height: 190px;
+  left: 18%;
+  bottom: 1%;
+  overflow: hidden;
+  background: #ffe085;
+  border-radius: 50%;
+  box-shadow: inset -2px -2px 9px #00000047, inset -2px 16px 12px #3939397d;
+}
+
+#about .more .more-circle .arrow-diagonal {}
 
 #services {
   padding: 55px 0;
