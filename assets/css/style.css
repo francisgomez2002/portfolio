@@ -437,7 +437,7 @@ header .social a i.github:hover {
   width: 95%;
   border-radius: 1rem;
   border: 1px solid #000;
-  background: #b6d8f7;
+  background: #e7d9cc;
   box-shadow: #495057 5px 5px 0;
 }
 
@@ -455,10 +455,6 @@ header .social a i.github:hover {
   color: #222e3a;
 }
 
-#about .about-details:hover .heading i {
-  color: #004ac1;
-}
-
 #about .about-details .out-desc {
   filter: drop-shadow(10px 10px 0 #000);
   transition: all 0.3s ease-in-out;
@@ -471,7 +467,7 @@ header .social a i.github:hover {
 #about .about-details .desc {
   position: relative;
   padding: 15px;
-  background: #bcd8ec;
+  background: #f7f0e7;
   max-width: 475px;
   min-height: 180px;
   margin-top: 15px;
@@ -553,6 +549,29 @@ header .social a i.github:hover {
   color: #565555;
 }
 
+#about .about-details .explore {
+  position: relative;
+  left: 48%;
+  bottom: 17%;
+  background: #f7f0e7;
+  width: 45%;
+  height: 17%;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: #000 9px 9px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+#about .about-details .explore:hover {
+  box-shadow: 0px 0px 0px;
+}
+
+#about .about-details .explore p {
+  font-size: 1.5rem;
+  font-weight: 900;
+
+}
+
 #about .expertize {
   grid-column: span 3 / span 3;
   grid-row: span 5 / span 5;
@@ -564,10 +583,10 @@ header .social a i.github:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f9c0af;
+  background: #eece9d;
   border: 2px solid #000;
   border-radius: 26px;
-  box-shadow: #000 10px 10px 0;
+  box-shadow: #000 8px 8px 0;
 }
 
 #about .expertize .heading h5 {
@@ -576,20 +595,60 @@ header .social a i.github:hover {
   margin: 1rem;
 }
 
-#about .expertize .heading .story {}
+#about .expertize .heading .story {
+  font-size: 3rem;
+  font-weight: 900;
+}
 
 #about .expertize .desc {
-  filter: drop-shadow(20px 15px 0 #000);
+  filter: drop-shadow(6px 6px 13px #495057);
 }
 
 #about .expertize .desc-inside {
   position: relative;
   padding: 20px;
-  background: #ffddd8;
+  background: #f2dfb9;
   margin-top: 15px;
   min-height: 605px;
   width: 750px;
   clip-path: path("M 0,0 L 720,0 A 25,20 0 0 1 750,20 L 750,350 L 753,355 A 2,-2 0 0 0 420,605 L 20,605 A 20,20 0 0 1 0,585 L 0,0 L 0,20 A 20,20, 0 0 1 20,0 Z");
+}
+
+#about .expertize .desc-inside p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #000;
+}
+
+#about .expertize .desc-inside .increasing-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 410px;
+  padding: 25px;
+}
+
+#about .expertize .desc-inside .increasing-number .num-box {
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+}
+
+#about .expertize .desc-inside .increasing-number .num {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 900;
+  box-shadow: inset -2px -2px 9px #00000047, inset -2px 16px 12px #3939397d;
+  width: 16%;
+  height: 88px;
+  border-radius: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+#about .expertize .desc-inside .increasing-number .text {
+  font-size: 1.2rem;
+  margin-left: 13px;
 }
 
 #about .more {
@@ -602,8 +661,14 @@ header .social a i.github:hover {
   bottom: 120%;
   border: 0;
   border-radius: 50%;
-  background: #ffddd8;
+  background: #f2dfb9;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+#about .more:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 0px;
 }
 
 #about .more .more-text {
@@ -644,7 +709,15 @@ header .social a i.github:hover {
   box-shadow: inset -2px -2px 9px #00000047, inset -2px 16px 12px #3939397d;
 }
 
-#about .more .more-circle .arrow-diagonal {}
+#about .more .more-circle .arrow-diagonal {
+  font-size: 7rem;
+  font-weight: 900;
+}
+
+#about .more:hover .arrow-diagonal {
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in-out;
+}
 
 #services {
   padding: 55px 0;

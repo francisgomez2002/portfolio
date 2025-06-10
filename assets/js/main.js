@@ -163,7 +163,7 @@ const swiper = new Swiper('.skills', {
 
 $('.slider').slick({
   infinite: true,
-  speed: 1500,
+  speed: 2500,
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
@@ -223,5 +223,24 @@ window.onload = () => {
   modeIcon.className = 'fas fa-sun';
 };
 
+//Increasing numbers
 
+const num = document.querySelectorAll('.num');
+let interval = 4000;
 
+console.log(num + "🟢");
+
+num.forEach((num) => {
+  let startVal = 0;
+  let endVal = parseInt(num.getAttribute('data-val'));
+
+  let duration = Math.floor(interval / endVal);
+  let counter = setInterval(() => {
+    startVal += 1;
+    num.textContent = startVal + "+";
+
+    if (startVal === endVal) {
+      clearInterval(counter);
+    }
+  }, duration);
+});
