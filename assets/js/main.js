@@ -1,3 +1,25 @@
+// // Preloader
+window.addEventListener("load", function () {
+  const preloader = document.getElementById('loader-wrap');
+  const content = document.getElementById('main-content');
+  const text = document.getElementById('loader-text');
+
+  preloader.style.opacity = 1;
+
+  setTimeout(function () {
+    preloader.style.transition = "opacity 0.5s ease";
+    preloader.style.opacity = 0;
+
+    setTimeout(function () {
+      preloader.style.display = 'none';
+      content.style.display = 'block';
+
+    });
+  }, 3000);
+});
+
+
+
 // particlesJS('particles-js',
 
 //   {

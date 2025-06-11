@@ -43,7 +43,12 @@
   <link rel="stylesheet" href="./assets/css/mediaQuery.css">
 </head>
 
-<body class="dark-mode light-mode">
+<body class="dark-mode light-mode" >
+
+  <div class="loader-wrap" id="loader-wrap">
+    <span class="loader"></span>
+  </div>
+
   <header id="navigation_bar">
     <div class="container-">
       <nav class="navbar navbar-expand-lg ">
@@ -75,7 +80,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content" style="display: none;">
     <section id="hero">
       <div class="container-xl">
         <span class="material-symbols-outlined bulb-off">light_off</span>
