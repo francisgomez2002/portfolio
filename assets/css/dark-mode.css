@@ -46,6 +46,10 @@
     z-index: -2;
   }
 
+  body.dark-mode header {
+    display: none;
+  }
+
 
   body.dark-mode .construction {
     display: block;
