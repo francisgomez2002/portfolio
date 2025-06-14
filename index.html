@@ -43,7 +43,8 @@
   <link rel="stylesheet" href="./assets/css/mediaQuery.css">
 </head>
 
-<body class="dark-mode light-mode" >
+
+<body class="dark-mode light-mode">
 
   <div class="loader-wrap" id="loader-wrap">
     <span class="loader"></span>
@@ -80,6 +81,29 @@
     </div>
   </header>
 
+  <div class="under-construction none">
+    <div class="container-xl">
+      <div class="content">
+        <div class="details">
+          <h1>Website </h1>
+          <p class="small"> under construction !</p>
+          <p class="desc">Something amazing and exciting is coming soon for you. Stay tuned for the surprise!</p>
+        </div>
+        <div class="img">
+          <img src="./assets/images/underconstruction/im.png" alt="Under Construction">
+        </div>
+      </div>
+      <button onclick="location.reload()">HOME</button>
+      <div class="social">
+        <a href="https://github.com/FrancisGomes" target="_blank"><i class="fa-brands fa-facebook facebook"></i></a>
+        <a href="https://github.com/FrancisGomes" target="_blank"><i class="fa-brands fa-instagram instagram"></i></a>
+        <a href="https://linkedin.com/in/francisgomes" target="_blank"><i
+            class="fa-brands fa-linkedin linkedin"></i></a>
+        <a href="https://github.com/FrancisGomes" target="_blank"><i class="fa-brands fa-github github"></i></a>
+      </div>
+    </div>
+  </div>
+
   <main id="main-content" style="display: none;">
     <section id="hero">
       <div class="container-xl">
@@ -99,7 +123,7 @@
             </div>
           </div>
           <div class="image">
-            <img src="./assets/images/hero/Untitled design 1.png" alt="francis_gomes">
+            <img src="./assets/images/hero/Untitled design 1.png" alt="francis_gomes" loading="lazy">
           </div>
         </div>
         <div class="download">
@@ -412,15 +436,33 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <h1 class="modal-title " id="exampleModalLabel">Modal title</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <form action="https://api.web3forms.com/submit" method="POST" class="row row-gap-24">
+            <input type="hidden" name="access_key" value="8ab86c90-44f8-4b2a-82f9-a736d43469fb">
+            <div class="col-12">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" name="name" class="form-control" placeholder="Your Name" id="name" required>
+            </div>
+            <div class="col-12">
+              <label for="email" class="form-label">Company</label>
+              <input type="text" name="company" class="form-control" placeholder="Your Company" id="company" required>
+            </div>
+            <div class="col-12">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" name="email" class="form-control" placeholder="Your Email" id="email" required>
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" name="message" id="message" placeholder="Your Message" rows="3"
+                required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+          <img src="./assets/images/modal/bg-img-2.jpeg" alt="bg-imag">
         </div>
       </div>
     </div>
