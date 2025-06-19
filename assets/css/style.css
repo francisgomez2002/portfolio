@@ -42,16 +42,18 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-.navbar-nav .nav-link.active {
-  color: #004ac1;
-  font-weight: 900;
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
 }
 
 ::-webkit-scrollbar {
   width: 15px;
   height: 0px;
 }
-
 
 ::-webkit-scrollbar-track {
   background: #fff;
@@ -129,8 +131,8 @@ input[type=number] {
 
 /*----------------------------------------------------------------------------------***************/
 
-header {
-  position: sticky;
+nav {
+  position: sticky !important;
   top: 0;
   background: #ffe7ca;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -138,34 +140,40 @@ header {
   z-index: 1203;
 }
 
-header a {
+nav a {
   display: flex;
   align-items: center;
 }
 
-header a img {
+nav a img {
   width: 50px;
   height: 50px;
 }
 
-header a span {
+nav a span {
   margin-left: 1rem;
   font-size: 1.95rem;
   font-weight: 900;
 }
 
-header .navbar-nav {
+nav .navbar-nav {
   align-items: center;
   margin: 0 5rem 0 0;
 }
 
-header .navbar-nav .nav-link {
+nav .navbar-nav .nav-link {
   margin: 0 1.5rem;
   font-size: 1.55rem;
   font-weight: 900;
+  padding: 10px;
+  border-radius: 8px;
 }
 
-header .navbar-nav button {
+nav .navbar-nav .nav-link:active {
+  box-shadow: inset -2px -2px 9px #00000047, inset -2px 16px 12px #3939397d;
+}
+
+nav .navbar-nav button {
   background: #004ac1;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   color: white;
@@ -177,43 +185,43 @@ header .navbar-nav button {
   margin-left: 2rem;
 }
 
-header .navbar-nav button:hover {
+nav .navbar-nav button:hover {
   background: #002b76;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-header .social {
+nav .social {
   display: flex;
   align-items: center;
 }
 
-header .social a {
+nav .social a {
   margin: 0 0.5rem;
   font-size: 1.35rem;
   font-weight: 900;
 }
 
-header .social a i {
+nav .social a i {
   filter: grayscale(100%);
   font-size: 25px;
 }
 
-header .social a i.facebook:hover {
+nav .social a i.facebook:hover {
   filter: grayscale(0%);
   color: #1877f2;
 }
 
-header .social a i.instagram:hover {
+nav .social a i.instagram:hover {
   filter: grayscale(0%);
   color: #e1306c;
 }
 
-header .social a i.linkedin:hover {
+nav .social a i.linkedin:hover {
   filter: grayscale(0%);
   color: #0077b5;
 }
 
-header .social a i.github:hover {
+nav .social a i.github:hover {
   filter: grayscale(0%);
   color: #333;
 }
@@ -343,7 +351,7 @@ header .social a i.github:hover {
   }
 
   100% {
-    left: 20%;
+    left: 18%;
   }
 }
 
@@ -404,14 +412,6 @@ header .social a i.github:hover {
   padding-top: 80px;
 }
 
-#particles-js {
-  position: absolute;
-  left: -10%;
-  width: 104.5rem;
-  height: 90%;
-  z-index: -1;
-}
-
 #about .inside-box {
   display: grid;
   grid-template-columns: repeat(5, 250px);
@@ -436,7 +436,7 @@ header .social a i.github:hover {
   box-shadow: none;
 }
 
-@property --angle {
+/* @property --angle {
   syntax: '<angle>';
   initial-value: 0deg;
   inherits: false;
@@ -468,8 +468,7 @@ header .social a i.github:hover {
   to {
     --angle: 360deg;
   }
-}
-
+} */
 
 
 #about .about-images img {
@@ -900,7 +899,7 @@ header .social a i.github:hover {
 }
 
 #projects {
-  padding: 35px 0;
+  padding: 55px 0 50px;
 }
 
 #projects .heading {
@@ -915,7 +914,7 @@ header .social a i.github:hover {
 }
 
 #contact {
-  padding: 55px 0 70px;
+  padding: 120px 0 130px;
   background-image: url(../images/contact/contact-bg.jpg);
 }
 
@@ -946,10 +945,6 @@ header .social a i.github:hover {
   font-size: 1rem;
   line-height: 0;
   margin: 0 0 20px;
-}
-
-#contact .contact-details {
-  display: flex;
 }
 
 #contact .contact-details .form .form-label {
@@ -1111,6 +1106,160 @@ header .social a i.github:hover {
   transition: all 0.3s ease-in-out;
 }
 
+#particles-js {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 345px;
+  z-index: -1;
+}
+
+canvas {
+  transform: scaleY(1);
+}
+
+#footer {
+  position: relative;
+  width: 99vw;
+  height: 42vh;
+  z-index: 0;
+}
+
+#footer .row {
+  position: relative;
+  top: 2rem;
+  padding: 15px 25px;
+  border-radius: 26px;
+  background: #4cd0ff;
+  box-shadow: 20px 15px 20px #000000a8;
+}
+
+#footer .row .logo {
+  display: flex;
+  align-items: center;
+}
+
+#footer .row .logo img {
+  width: 100px;
+  height: 100px;
+  margin-right: 1rem;
+}
+
+#footer .row .logo .desc p {
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+#footer .row .logo .desc p.small {
+  position: relative;
+  bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+#footer .row .footer-details .logo-desc {
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+#footer .row .footer-details .socials {
+  margin-top: 1.2rem;
+}
+
+#footer .row .footer-details .socials a {
+  padding: 15px;
+  margin: 0 1rem;
+  border-radius: 50%;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+}
+
+#footer .row .footer-details .socials a.facebook {
+  background: #3b5998;
+  color: #fff;
+}
+
+#footer .row .footer-details .socials a.instagram {
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  color: #fff;
+}
+
+#footer .row .footer-details .socials a.linkedin {
+  background: #0077b5;
+  color: #fff;
+}
+
+#footer .row .footer-details .socials a.github {
+  background: #333;
+  color: #fff;
+}
+
+#footer .row .links {
+  width: 100%;
+  margin-left: 7rem;
+}
+
+#footer .row .links h5 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  border-bottom: 2px solid #ffffff8a;
+  padding-bottom: 0.8rem;
+  width: 35%;
+}
+
+#footer .row .links li {
+  list-style: inside;
+  transition: all 0.3s ease-in-out;
+}
+
+#footer .row .links li:hover {
+  text-decoration: underline;
+}
+
+#footer .row .links li a {
+  color: #000;
+}
+
+#footer .row .contact-details .address,
+#footer .row .contact-details .email,
+#footer .row .contact-details .number {
+  display: flex;
+}
+
+#footer .row .contact-details .address i,
+#footer .row .contact-details .email i,
+#footer .row .contact-details .number i {
+  font-size: 2rem;
+  margin: 0.5rem 1rem;
+}
+
+#footer .row .contact-details .address p {
+  margin-top: 5px;
+  width: 80%;
+  font-size: 1rem;
+}
+
+#footer .row .contact-details .email p {
+  margin-top: 15px;
+}
+
+#footer .row .contact-details .number p {
+  margin-top: 5px;
+}
+
+#footer .row .copyright {
+  margin-top: 0.2rem;
+  border-top: 2px solid #ffffff59;
+  padding-top: 1rem;
+  width: 80%;
+}
+
+#footer .row .copyright p {
+  margin: 0;
+}
+
 /**-----------------------------------------------**/
 /*MODAL FORM*/
 
@@ -1122,6 +1271,7 @@ header .social a i.github:hover {
 
 .modal .modal-dialog {
   top: 15%;
+  right: 10%;
 }
 
 .modal .modal-content {
@@ -1129,8 +1279,8 @@ header .social a i.github:hover {
   padding: 10px 15px;
   border-radius: 12px;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 80%;
+  background-size: 50% 100%;
+  width: 800px;
 }
 
 .modal .modal-title {
@@ -1143,12 +1293,27 @@ header .social a i.github:hover {
   color: #fff;
 }
 
+.modal .modal-header {
+  width: 45%;
+}
+
 .modal .modal-body {
   display: flex;
 }
 
 .modal .modal-body img {
   position: absolute;
+  left: 50%;
+  bottom: -2%;
+  width: 52%;
+  height: 652px;
+  object-fit: cover;
+  border-radius: 0 12px 12px 0;
+  z-index: -1;
+}
+
+.modal form {
+  width: 50%;
 }
 
 .modal .form-label {
@@ -1173,7 +1338,6 @@ header .social a i.github:hover {
 .modal button.btn:hover {
   box-shadow: 0px 0px 0px;
 }
-
 
 /**-----------------------------------------------**/
 

@@ -1,4 +1,4 @@
-// // Preloader
+// Preloader
 window.addEventListener("load", function () {
   const preloader = document.getElementById('loader-wrap');
   const content = document.getElementById('main-content');
@@ -18,130 +18,129 @@ window.addEventListener("load", function () {
   }, 3000);
 });
 
+//Navbar 
 
+//Particle JS
 
-// particlesJS('particles-js',
+particlesJS('particles-js',
 
-//   {
-//     "particles": {
-//       "number": {
-//         "value": 90,
-//         "density": {
-//           "enable": true,
-//           "value_area": 200
-//         }
-//       },
-//       "color": {
-//         "value": ["#43b0f1", "#057dcd"]
-//       },
-//       "shape": {
-//         "type": "circle",
-//         "stroke": {
-//           "width": 0,
-//           "color": "#00008B"
-//         },
-//         "polygon": {
-//           "nb_sides": 5
-//         },
-//         "image": {
-//           "src": "img/github.svg",
-//           "width": 100,
-//           "height": 100
-//         }
-//       },
-//       "opacity": {
-//         "value": 1,
-//         "random": false,
-//         "anim": {
-//           "enable": false,
-//           "speed": 0.5,
-//           "opacity_min": 0.1,
-//           "sync": false
-//         }
-//       },
-//       "size": {
-//         "value": 5,
-//         "random": true,
-//         "anim": {
-//           "enable": false,
-//           "speed": 400,
-//           "size_min": 0.1,
-//           "sync": false
-//         }
-//       },
-//       "line_linked": {
-//         "enable": false,
-//         "distance": 150,
-//         "color": "#ffffff",
-//         "opacity": 0.4,
-//         "width": 1
-//       },
-//       "move": {
-//         "enable": true,
-//         "speed": 10,
-//         "direction": "none",
-//         "random": false,
-//         "straight": false,
-//         "out_mode": "out",
-//         "attract": {
-//           "enable": false,
-//           "rotateX": 600,
-//           "rotateY": 1200
-//         }
-//       }
-//     },
-//     "interactivity": {
-//       "detect_on": "canvas",
-//       "events": {
-//         "onhover": {
-//           "enable": true,
-//           "mode": "bubble"
-//         },
-//         "onclick": {
-//           "enable": true,
-//           "mode": "remove"
-//         },
-//         "resize": false
-//       },
-//       "modes": {
-//         "grab": {
-//           "distance": 1000,
-//           "line_linked": {
-//             "opacity": 1
-//           }
-//         },
-//         "bubble": {
-//           "distance": 299,
-//           "size": 10,
-//           "duration": 4,
-//           "opacity": 10,
-//           "speed": 3
-//         },
-//         "repulse": {
-//           "distance": 200
-//         },
-//         "push": {
-//           "particles_nb": 4
-//         },
-//         "remove": {
-//           "particles_nb": 2
-//         }
-//       }
-//     },
-//     "retina_detect": true,
-//     "config_demo": {
-//       "hide_card": false,
-//       "background_color": "#b61924",
-//       "background_image": "",
-//       "background_position": "50% 50%",
-//       "background_repeat": "no-repeat",
-//       "background_size": "cover"
-//     }
-//   }
+  {
+    "particles": {
+      "number": {
+        "value": 300,
+        "density": {
+          "enable": true,
+          "value_area": 200
+        }
+      },
+      "color": {
+        "value": "#fc5b1c"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 1,
+          "color": "#ff0000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 1,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 10,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 100,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": false,
+        "distance": 100,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "direction": "bottom",
+        "enable": true,
+        "speed": 10,  // Higher speed = stronger gravity feel
+        "random": false,
+        "straight": true,
+        "out_mode": "out"
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "bubble"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "remove"
+        },
+        "resize": false
+      },
+      "modes": {
+        "grab": {
+          "distance": 1000,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 299,
+          "size": 10,
+          "duration": 4,
+          "opacity": 10,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true,
+    "config_demo": {
+      "hide_card": false,
+      "background_color": "#b61924",
+      "background_image": "",
+      "background_position": "50% 50%",
+      "background_repeat": "no-repeat",
+      "background_size": "cover"
+    }
+  }
 
-// );
+);
+
 
 // Initialize Swiper
+
 const swiper = new Swiper('.skills', {
   direction: 'horizontal',
   loop: true,

@@ -49,37 +49,41 @@
   <div class="loader-wrap" id="loader-wrap">
     <span class="loader"></span>
   </div>
-
-  <header id="navigation_bar" >
-    <div class="container-">
-      <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./assets/images/logo/logo.png" alt="Logo">
-            <span>Francis Gomes</span>
+  <nav class="navbar navbar-expand-lg " id="navigation_bar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/images/logo/logo.png" alt="Logo">
+        <span>Francis Gomes</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="#">Home
           </a>
-          <div class="navbar-nav">
-            <a class="nav-link" href="#">Home</a>
-            <a class="nav-link" href="#about">About</a>
-            <a class="nav-link" href="#services">Services</a>
-            <a class="nav-link" href="#projects">Projects</a>
-            <a class="nav-link" href="#contact">Contact</a>
-            <!-- <button type="button" data-bs-toggle="modal" data-bs-target="#contactModal">
-              Let's Talk
-            </button> -->
-          </div>
-          <div class="social">
-            <a href="https://github.com/FrancisGomes" target="_blank"><i class="fa-brands fa-facebook facebook"></i></a>
-            <a href="https://github.com/FrancisGomes" target="_blank"><i
-                class="fa-brands fa-instagram instagram"></i></a>
-            <a href="https://linkedin.com/in/francisgomes" target="_blank"><i
-                class="fa-brands fa-linkedin linkedin"></i></a>
-            <a href="https://github.com/FrancisGomes" target="_blank"><i class="fa-brands fa-github github"></i></a>
-          </div>
+          <a class="nav-link" href="#about">About
+          </a>
+          <a class="nav-link" href="#services">Services
+
+          </a>
+          <a class="nav-link" href="#projects">Projects
+
+          </a>
+          <a class="nav-link" href="#contact">Contact
+          </a>
         </div>
-      </nav>
+        <div class="social m-none">
+          <a href="https://github.com/FrancisGomes" target="_blank"><i class="fa-brands fa-facebook facebook"></i></a>
+          <a href="https://github.com/FrancisGomes" target="_blank"><i class="fa-brands fa-instagram instagram"></i></a>
+          <a href="https://linkedin.com/in/francisgomes" target="_blank"><i
+              class="fa-brands fa-linkedin linkedin"></i></a>
+          <a href="https://github.com/FrancisGomes" target="_blank"><i class="fa-brands fa-github github"></i></a>
+        </div>
+      </div>
     </div>
-  </header>
+  </nav>
 
   <div class="under-construction none">
     <div class="container-xl">
@@ -105,6 +109,7 @@
   </div>
 
   <main id="main-content" style="display: none;">
+
     <section id="hero">
       <div class="container-xl">
         <span class="material-symbols-outlined bulb-off">light_off</span>
@@ -157,7 +162,7 @@
                     <p class="title">JavaScript</p>
                   </div>
                   <div class="skill-slides"><i class="fa-brands fa-bootstrap"></i>
-                    <p class="title">Bootstrap</p>
+                    <p class="title small">Bootstrap</p>
                   </div>
                   <div class="skill-slides"><i class="fa-brands fa-github"></i>
                     <p class="title">GitHub</p>
@@ -369,7 +374,76 @@
         <div class="heading">
           <h3>My Projects</h3>
         </div>
-        <div class="projects-lists"></div>
+        <div class="projects-lists">
+          <div class="row row-gap-5">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="..." width="100" height="100">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="..." width="100" height="100">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="..." width="100" height="100">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="..." width="100" height="100">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="..." width="100" height="100">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-12">
+              <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="..." width="100" height="100">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card’s content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -426,10 +500,71 @@
       </div>
     </section>
 
-
   </main>
+
   <div class="scroll-to-top"><i class="fa-regular fa-hand-point-up"></i></div>
-  <footer id="footer"></footer>
+
+  <footer id="footer">
+    <div class="container-xl">
+      <div id="particles-js"></div>
+      <div class="row">
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12">
+          <div class="footer-details">
+            <div class="logo">
+              <img src="./assets/images/logo/logo.png" alt="logo">
+              <div class="desc">
+                <p>FRANCIS GOMES </p>
+                <p class="small">My Portfolio</p>
+              </div>
+            </div>
+            <div class="logo-desc">
+              <p>I create dynamic and responsive Web Applications.</p>
+            </div>
+            <div class="socials">
+              <a href="https://github.com/FrancisGomes" target="_blank" class="facebook"><i
+                  class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://github.com/FrancisGomes" target="_blank" class="instagram"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href="https://linkedin.com/in/francisgomes" target="_blank" class="linkedin"><i
+                  class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/FrancisGomes" target="_blank" class="github">
+                <i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12">
+          <div class="links">
+            <h5>QUICK LINKS</h5>
+            <ul>
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#services">SERVICES</a></li>
+              <li><a href="#projects">PROJECTS</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12">
+          <div class="contact-details">
+            <div class="address"><i class="fa-solid fa-address-book"></i>
+              <p>455/1, Kabi Mukunda Das Road, Kolkata - 700065, Dum Dum Cantonmnet, West Bengal, India.</p>
+            </div>
+            <div class="email"><i class="fa-solid fa-envelope-open-text"></i>
+              <p>gomes.franciscus@gmail.com</p>
+            </div>
+            <div class="number"><i class="fa-solid fa-phone-volume"></i>
+              <p>+91 82729 53598</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 ">
+          <div class="copyright">
+            <p><i class="fa-solid fa-copyright"></i>2025 copyright | All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Contact Modal -->
   <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
