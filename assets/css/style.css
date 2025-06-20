@@ -21,11 +21,15 @@ textarea {
   border-radius: 26px;
 }
 
+p {
+  margin: 0;
+}
+
 /* * {
   border: 1px solid #e1306c;
 } */
 
-body.light-mode {
+body {
   font-family: "Share Tech", sans-serif;
   background: #ffe085;
 }
@@ -1170,7 +1174,6 @@ canvas {
 
 #footer .row .footer-details .socials a {
   padding: 15px;
-  margin: 0 1rem;
   border-radius: 50%;
   margin: 0 1rem;
   font-size: 1.5rem;
