@@ -639,9 +639,9 @@
   }
 
   #about .about-details .explore {
-    left: 47%;
+    left: 54%;
     bottom: 14%;
-    width: 47%;
+    width: 40%;
   }
 
   #about .about-details .explore a {
@@ -659,8 +659,8 @@
   }
 
   #about .expertize .desc-inside {
-    width: 660px;
-    clip-path: path("M 0,0 L 640,0 A 25,20 0 0 1 660,20 L 660,350 L 660,585 A 20,20 0 0 1 640,605 L 270,605 A 1,-1 0 0 0 0,360 L 0,20 A 20,20, 0 0 1 20,0 Z");
+    width: 600px;
+    clip-path: path("M 0,0 L 580,0 A -20,20 0 0 1 600,20 L 600,105 A -20,20 0 0 1 580,125 L 340,125 A -20,20 0 0 0 320, 145 L 320,160 A -20,20 0 0 1 300,180 L 210,180 L 20,180 A -20,20 0 0 1 0,160 L 0,20 A -20,20 0 0 1 20,0 Z");
   }
 
   #about .expertize .desc-inside .increasing-number .num-box {
