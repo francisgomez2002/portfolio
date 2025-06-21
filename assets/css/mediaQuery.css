@@ -222,18 +222,18 @@
 
   #about .about-details .explore {
     position: absolute;
-    top: 141.9rem;
-    left: 45%;
+    top: 143.5rem;
+    left: 49%;
     bottom: 0;
-    width: 44%;
+    width: 45%;
     height: 7%;
-    width: 50%;
+
   }
 
   #about .about-details .desc {
-    max-width: 400px;
+    max-width: 330px;
     max-height: 180px;
-    clip-path: path("M 0,0 L 390,0 A 20,20 0 0 1 400,20 L 400,90 A 20,20 0 0 1 390,110 L 170,110 A 10,10 0 0 0 160,120 L 160,170 A 10,10 0 0 1 150,180 L 10,180 A 10,10 0 0 1 0,170 L 0,10 A 10,10 0 0 1 10,0 Z");
+    clip-path: path("M 0,0 L 310,0 A 20,20 0 0 1 330,20 L 330,90 A 20,20 0 0 1 310,110 L 170,110 A 10,10 0 0 0 160,120 L 160,170 A 10,10 0 0 1 150,180 L 10,180 A 10,10 0 0 1 0,170 L 0,10 A 10,10 0 0 1 10,0 Z");
   }
 
   #about .expertize {
@@ -253,8 +253,8 @@
     background: #f2dfb9;
     margin-top: 15px;
     min-height: 605px;
-    max-width: 380px;
-    clip-path: path("M 0,0 L 370,0 A 20,20 0 0 1 380,20 L 380,290 L 380,525 A 20,20 0 0 1 360,545 L 155,545 A -4,4 0 0 0 0,378 L 0,525 L 0,20 A 20,20 0 0 1 20,0 Z");
+    max-width: 340px;
+    clip-path: path("M 0,0 L 320,0 A 20,20 0 0 1 340,20 L 340,290 L 340,525 A 20,20 0 0 1 320,545 L 155,545 A -4,4 0 0 0 0,378 L 0,525 L 0,20 A 20,20 0 0 1 20,0 Z");
   }
 
   #about .expertize .desc-inside p {
@@ -328,7 +328,7 @@
   #services .heading h3::after {
     content: "";
     position: absolute;
-    bottom: -230%;
+    bottom: -234%;
     width: 10px;
     height: 10px;
   }
