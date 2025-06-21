@@ -508,3 +508,16 @@
     display: none;
   }
 }
+
+@media (max-width:480px) {
+  #about .about-details .explore {
+    top: 145.9rem;
+  }
+
+  #services .heading h3::before,
+  #services .heading h3::after {
+    content: "";
+    position: absolute;
+    bottom: -239%;
+  }
+}
