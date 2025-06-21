@@ -339,7 +339,7 @@ nav .social a i.github:hover {
   content: " ";
   position: absolute;
   left: 19%;
-  top: 56%;
+  top: 57%;
   width: 15%;
   height: 8%;
   background-color: #ffd045;
@@ -355,7 +355,7 @@ nav .social a i.github:hover {
   }
 
   100% {
-    left: 18%;
+    left: 29%;
   }
 }
 
@@ -1263,6 +1263,10 @@ canvas {
   margin: 0;
 }
 
+#footer .row .copyright p i {
+  margin-right: 15px;
+}
+
 /**-----------------------------------------------**/
 /*MODAL FORM*/
 
@@ -1272,18 +1276,12 @@ canvas {
   z-index: 9999;
 }
 
-.modal .modal-dialog {
-  top: 15%;
-  right: 10%;
-}
-
 .modal .modal-content {
   background: url(../images/modal/bg-img.jpg);
   padding: 10px 15px;
   border-radius: 12px;
   background-repeat: no-repeat;
-  background-size: 50% 100%;
-  width: 800px;
+  background-size:100%;
 }
 
 .modal .modal-title {
@@ -1294,10 +1292,6 @@ canvas {
   backdrop-filter: blur(2px);
   border-radius: 16px;
   color: #fff;
-}
-
-.modal .modal-header {
-  width: 45%;
 }
 
 .modal .modal-body {
@@ -1313,10 +1307,6 @@ canvas {
   object-fit: cover;
   border-radius: 0 12px 12px 0;
   z-index: -1;
-}
-
-.modal form {
-  width: 50%;
 }
 
 .modal .form-label {

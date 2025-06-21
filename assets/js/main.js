@@ -215,17 +215,17 @@ const text = document.querySelector('.word');
 
 const phrases = () => {
   setTimeout(() => {
-    text.textContent = ' DEVELOPER';
+    text.textContent = ' DESIGNER ';
   }, 0);
   setTimeout(() => {
-    text.textContent = ' DESIGNER';
-  }, 4000);
+    text.textContent = ' DEVELOPER ';
+  }, 3000);
 }
 
 phrases();
 setInterval(() => {
   phrases();
-}, 8000);
+}, 6000);
 
 //Dark Mode toggle
 const toggleBtn = document.getElementById('darkModeToggle');
