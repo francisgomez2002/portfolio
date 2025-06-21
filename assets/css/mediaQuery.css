@@ -520,6 +520,6 @@
   #services .heading h3::after {
     content: "";
     position: absolute;
-    bottom: -239%;
+    bottom: -230%;
   }
 }
