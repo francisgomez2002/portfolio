@@ -528,6 +528,7 @@
 
   #hero .container-xl {
     width: 95%;
+    margin-top: 3rem;
   }
 
   #hero button.toggle {
@@ -547,7 +548,7 @@
   #hero .bulb-off,
   #hero .bulb-on {
     position: absolute;
-    top: -7%;
+    top: -15%;
     left: -1%;
     filter: drop-shadow(-6px -6px 6px black);
   }
@@ -833,5 +834,27 @@
 
   #footer .row .contact-details .number p {
     margin-top: 7px;
+  }
+
+  /**-- DARK MODE ---**/
+  body.dark-mode .under-construction .content {
+    margin: 2rem 0;
+  }
+
+  body.dark-mode .under-construction .content {
+    flex-direction: column;
+  }
+
+  body.dark-mode .under-construction button {
+    position: absolute;
+    bottom: 12%;
+  }
+
+  body.dark-mode .under-construction .social {
+    bottom: 4%;
+  }
+
+  body.dark-mode .scroll-to-top.show {
+    display: none;
   }
 }
