@@ -659,8 +659,8 @@
   }
 
   #about .expertize .desc-inside {
-    width: 700px;
-    clip-path: path("M 0,0 L 680,0 A 25,20 0 0 1 700,20 L 700,350 L 700,585 A 20,20 0 0 1 680,605 L 270,605 A 1,-1 0 0 0 0,360 L 0,20 A 20,20, 0 0 1 20,0 Z");
+    width: 630px;
+    clip-path: path("M 0,0 L 610,0 A 25,20 0 0 1 630,20 L 630,350 L 700,585 A 20,20 0 0 1 610,605 L 270,605 A 1,-1 0 0 0 0,360 L 0,20 A 20,20, 0 0 1 20,0 Z");
   }
 
   #about .expertize .desc-inside .increasing-number .num-box {
