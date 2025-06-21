@@ -511,6 +511,7 @@
 
 @media (max-width:480px) {
   #about .about-details .explore {
+    position: relative;
     top: 145.9rem;
   }
 
