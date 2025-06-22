@@ -86,13 +86,16 @@
     text-align: center;
   }
 
-
   #hero .hero-details .image::before {
     top: 10%;
     left: 25%;
     width: 50%;
     height: 30%;
     border: 15px solid #007ba7;
+  }
+
+  body.dark-mode #hero .hero-details .image::before {
+    border: 15px solid #d20062;
   }
 
   #hero .hero-details .image img {
@@ -403,6 +406,10 @@
     left: 3%;
   }
 
+  body.dark-mode #contact {
+    background-size: 167rem;
+  }
+
   #footer .row .logo img {
     width: 50px;
     height: 50px;
@@ -500,6 +507,20 @@
     bottom: 6%;
   }
 
+  /**--- TRANSITIONS ---**/
+
+  #about .about-images::before,
+  #about .about-images::after {
+    height: 19rem;
+    width: 26rem;
+  }
+
+  body.dark-mode #about .about-images::before,
+  body.dark-mode #about .about-images::after {
+    height: 19rem;
+    width: 26rem;
+  }
+
 }
 
 @media (max-width:479.99px) {
@@ -523,6 +544,11 @@
 /** PORTRAIT MODE **/
 
 @media (min-width:480px) and (max-width:768px) {
+
+  li {
+    padding: 0.2rem;
+    font-size: 0.8rem;
+  }
 
   /**--- HERO ---**/
 
@@ -568,6 +594,9 @@
     border: 20px solid #007ba7;
   }
 
+  body.dark-mode #hero .hero-details .image::before {
+    border: 20px solid #d20062;
+  }
 
   #hero .hero-details .image img {
     position: relative;
@@ -703,6 +732,11 @@
   }
 
 
+  #services .card .desc .logo h5 {
+    font-size: 1rem;
+  }
+
+
   /**--- CONTACT ---**/
 
   #contact .contact-details {
@@ -750,6 +784,10 @@
   #footer .row {
     left: 2%;
     width: 100%;
+  }
+
+  #particles-js {
+    height: 635px;
   }
 
   #footer .row .logo img {
@@ -856,5 +894,19 @@
 
   body.dark-mode .scroll-to-top.show {
     display: none;
+  }
+
+  /**--- TRANSITIONS ---**/
+
+  #about .about-images::before,
+  #about .about-images::after {
+    height: 29rem;
+    width: 41rem;
+  }
+
+  body.dark-mode #about .about-images::before,
+  body.dark-mode #about .about-images::after {
+    height: 29rem;
+    width: 41rem;
   }
 }

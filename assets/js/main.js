@@ -22,163 +22,44 @@ window.addEventListener("load", function () {
 
 //Particle JS
 
-particlesJS('particles-js',
-
-  {
-    "particles": {
-      "number": {
-        "value": 300,
-        "density": {
-          "enable": true,
-          "value_area": 200
-        }
-      },
-      "color": {
-        "value": "#fc5b1c"
-      },
-      "shape": {
-        "type": "circle",
-        "stroke": {
-          "width": 1,
-          "color": "#ff0000"
-        },
-        "polygon": {
-          "nb_sides": 5
-        },
-        "image": {
-          "src": "img/github.svg",
-          "width": 100,
-          "height": 100
-        }
-      },
-      "opacity": {
-        "value": 1,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 1,
-          "sync": false
-        }
-      },
-      "size": {
-        "value": 10,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 100,
-          "size_min": 0.1,
-          "sync": false
-        }
-      },
-      "line_linked": {
-        "enable": false,
-        "distance": 100,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
-      },
-      "move": {
-        "direction": "bottom",
+particlesJS('particles-js', {
+  "particles": {
+    "number": {
+      "value": 600,
+      "density": {
         "enable": true,
-        "speed": 10,  // Higher speed = stronger gravity feel
-        "random": false,
-        "straight": true,
-        "out_mode": "out"
+        "value_area": 100
       }
     },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": true,
-          "mode": "bubble"
-        },
-        "onclick": {
-          "enable": true,
-          "mode": "remove"
-        },
-        "resize": false
-      },
-      "modes": {
-        "grab": {
-          "distance": 1000,
-          "line_linked": {
-            "opacity": 1
-          }
-        },
-        "bubble": {
-          "distance": 299,
-          "size": 10,
-          "duration": 4,
-          "opacity": 10,
-          "speed": 3
-        },
-        "repulse": {
-          "distance": 200
-        },
-        "push": {
-          "particles_nb": 4
-        },
-        "remove": {
-          "particles_nb": 2
-        }
-      }
+    "color": {
+      "value": "#fc5b1c"
     },
-    "retina_detect": true,
-    "config_demo": {
-      "hide_card": false,
-      "background_color": "#b61924",
-      "background_image": "",
-      "background_position": "50% 50%",
-      "background_repeat": "no-repeat",
-      "background_size": "cover"
+    "shape": {
+      "type": "circle"
+    },
+    "opacity": {
+      "value": 1
+    },
+    "size": {
+      "value": 5,
+      "random": true
+    },
+    "line_linked": {
+      "enable": false,
+      "distance": 150,
+      "color": "#ffc107",
+      "opacity": 0.5,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 3,
+      "direction": "bottom",
+      "out_mode": "out"
     }
-  }
-
-);
-
-
-// Initialize Swiper
-
-const swiper = new Swiper('.skills', {
-  direction: 'horizontal',
-  loop: true,
-  slidesPerView: 3,
-  spaceBetween: 20,
-  centeredSlides: true,
-
-  autoplay: {
-    delay: 1000,
-    disableOnInteraction: true,
   },
-
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  breakpoints: {
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 30,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-    1024: {
-      slidesPerView: 3,
-      spaceBetween: 40,
-    },
-  },
-  mousewheel: true,
-
 });
+
 
 // Initialize Slick Slider
 
@@ -208,6 +89,8 @@ scrollToTopBtn.addEventListener('click', () => {
     top: 0,
     behavior: 'smooth'
   });
+
+  initParticles(isDark ? "#ffffff" : "#fc5b1c");
 });
 
 // Text typing effect

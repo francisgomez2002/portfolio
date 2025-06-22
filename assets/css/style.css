@@ -160,6 +160,10 @@ nav a span {
   font-weight: 900;
 }
 
+.navbar-expand-lg .navbar-collapse {
+  justify-content: center;
+}
+
 nav .navbar-nav {
   align-items: center;
   margin: 0 5rem 0 0;
@@ -440,17 +444,17 @@ nav .social a i.github:hover {
   box-shadow: none;
 }
 
-/* @property --angle {
+@property --angle {
   syntax: '<angle>';
   initial-value: 0deg;
   inherits: false;
 }
 
-#about .about-images:hover::before,
-#about .about-images:hover::after {
+#about .about-images::before,
+#about .about-images::after {
   content: '';
   position: absolute;
-  background: conic-gradient(from var(--angle), transparent 75%, #4797ff);
+  background: conic-gradient(from var(--angle), transparent 75%, #ff8100);
   height: 27rem;
   width: 31rem;
   inset: -8px;
@@ -459,7 +463,7 @@ nav .social a i.github:hover {
   animation: 3s spin linear infinite;
 }
 
-#about .about-images:hover::before {
+#about .about-images::before {
   filter: blur(1.5rem);
   opacity: 0.5;
 }
@@ -472,7 +476,7 @@ nav .social a i.github:hover {
   to {
     --angle: 360deg;
   }
-} */
+}
 
 
 #about .about-images img {
@@ -1134,7 +1138,8 @@ canvas {
   top: 2rem;
   padding: 15px 25px;
   border-radius: 26px;
-  background: #4cd0ff;
+  background: #ff7d0087;
+  backdrop-filter: blur(4px);
   box-shadow: 20px 15px 20px #000000a8;
 }
 
@@ -1207,7 +1212,7 @@ canvas {
 #footer .row .links h5 {
   font-size: 1.5rem;
   font-weight: 900;
-  border-bottom: 2px solid #ffffff8a;
+  border-bottom: 2px solid #212529;
   padding-bottom: 0.8rem;
   width: 35%;
 }
@@ -1254,7 +1259,7 @@ canvas {
 
 #footer .row .copyright {
   margin-top: 0.2rem;
-  border-top: 2px solid #ffffff59;
+  border-top: 2px solid #212529;
   padding-top: 1rem;
   width: 80%;
 }
@@ -1281,7 +1286,7 @@ canvas {
   padding: 10px 15px;
   border-radius: 12px;
   background-repeat: no-repeat;
-  background-size:100%;
+  background-size: 100%;
 }
 
 .modal .modal-title {
