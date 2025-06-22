@@ -907,6 +907,6 @@
   body.dark-mode #about .about-images::before,
   body.dark-mode #about .about-images::after {
     height: 29rem;
-    width: 41rem;
+    width: 35.5rem;
   }
 }
