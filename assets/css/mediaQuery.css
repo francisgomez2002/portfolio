@@ -512,13 +512,13 @@
   #about .about-images::before,
   #about .about-images::after {
     height: 19rem;
-    width: 21rem;
+    width: 21.5rem;
   }
 
   body.dark-mode #about .about-images::before,
   body.dark-mode #about .about-images::after {
     height: 19rem;
-    width: 21rem;
+    width: 21.5rem;
   }
 
 }
