@@ -786,6 +786,10 @@
     width: 100%;
   }
 
+  body.dark-mode #contact {
+    background-size: 161rem;
+  }
+
   #particles-js {
     height: 635px;
   }
